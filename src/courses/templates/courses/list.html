@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Курсы</title>
+</head>
+<body>
+    <h1>Все курсы</h1>
+    
+    {% for course in courses %}
+        <div>
+            <h2>{{ course.title }}</h2>
+            <p>{{ course.description }}</p>
+        </div>
+    {% endfor %}
+    
+</body>
+</html>
